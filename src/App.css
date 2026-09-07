@@ -1,0 +1,53 @@
+/* Белая карточка из Фигмы, в которой лежит всё приложение */
+.main-card {
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: var(--border-radius-card);
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*TaskHeader */
+.task-header {
+  display: flex;
+  justify-content: space-between; /* Кнопку "+ Add task" толкает вправо */
+  align-items: center; /* Выравнивает кнопку и текст по центру (как на фото) */
+  width: 100%;
+  align-self: stretch;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.heading h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.task-stats {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.add-task-btn {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+  padding: 10px 12px;
+
+  border-radius: var(--border-radius-btn);
+  color: var(--color-primary);
+  background-color: #ebf3ff;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-task-btn:hover {
+  background-color: #dbeafe;
+}

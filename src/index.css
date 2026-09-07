@@ -1,0 +1,42 @@
+@import url("https://googleapis.com");
+
+:root {
+  --bg-grey: #f8f8f8; /* Серый фон для контейнера фильтров */
+
+  --text-muted: #a0a0a0; /* Светло-серый для времени и неактивных фильтров */
+  --color-primary: #0263f6; /* Яркий синий для текста кнопки и чекбоксов */
+
+  --border-light: #f0f0f2; /* Тонкие линии между задачами */
+  --border-radius-card: 24px;
+  --border-radius-btn: 8px;
+
+  /* ТВОИ ШРИФТЫ ИЗ FIGMA */
+  --font-main: "Inter", sans-serif; /* Для основного текста, времени, кнопок */
+  --font-heading: "Iosevka Charon", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--font-main);
+  font-weight: 400;
+  color: #000;
+}
+
+body {
+  background: linear-gradient(180deg, #ffffff 30%, #c0bad6 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
