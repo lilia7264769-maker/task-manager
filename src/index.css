@@ -1,10 +1,12 @@
-@import url("https://googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import "tailwindcss";
 
 :root {
   --bg-grey: #f8f8f8; /* Серый фон для контейнера фильтров */
 
-  --text-muted: #a0a0a0; /* Светло-серый для времени и неактивных фильтров */
-  --color-primary: #0263f6; /* Яркий синий для текста кнопки и чекбоксов */
+  --color-primary: #0263f6;
+  --color-black: #000; 
+  --text-muted: #a0a0a0; 
 
   --border-light: #f0f0f2; /* Тонкие линии между задачами */
   --border-radius-card: 24px;
@@ -15,18 +17,15 @@
   --font-heading: "Iosevka Charon", serif;
 }
 
-* {
+@layer base { body {
+  background: linear-gradient(180deg, #edecf1 30%, #c0bad6 100%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
   font-family: var(--font-main);
   font-weight: 400;
-  color: #000;
-}
-
-body {
-  background: linear-gradient(180deg, #ffffff 30%, #c0bad6 100%);
+  color: var(--color-black);
 
   display: flex;
   justify-content: center;
@@ -35,8 +34,38 @@ body {
   min-height: 100vh;
 }
 
+h2{
+  font-weight: 500;
+  font-size: 22px;
+}
+
+
 button {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   border: none;
+  cursor: pointer;
+}
+}
+
+/* Scrollbar для списка задач */
+.task-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.task-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: #d9dbdf;
+  border-radius: 999px;
+}
+
+.task-list::-webkit-scrollbar-thumb:hover {
+  background: #aeb1b6;
+}
+
+.task-list::-webkit-scrollbar-button {
+  display: none;
 }
