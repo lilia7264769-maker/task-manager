@@ -2,6 +2,10 @@
 
 A simple task management app built with React and TypeScript.
 
+## Live Demo
+
+[Task Manager](https://task-manager-one-alpha-75.vercel.app/)
+
 ## Features
 
 - Add tasks
@@ -25,14 +29,3 @@ A simple task management app built with React and TypeScript.
 ```bash
 npm install
 npm run dev
-
-
-What I Practiced
-React state and props
-Component composition
-Event handling
-Forms
-Conditional rendering
-Filtering and searching data
-TypeScript
-Tailwind CSS
